@@ -1,0 +1,5 @@
+# ChatApp-Android--sdk---java-
+A simple chat app done in android studio, where the user can:
+- register, log in, reset password, update user profile, and communicate with registered users.
+- the app uses firebase database, and some of the firebase functionalities such as: singInWithEmailAndPassword, if the firebase auth user is not null then the user does not have to
+re - enter his credentials.
