@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="@color/primary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/update_imageView"
+        android:src="@mipmap/ic_download_user_smile_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_imageTitle"
+        android:textStyle="italic"
+        android:text="Click on image to update user profile"
+        android:textSize="26sp"
+        android:fontFamily="cursive"
+        android:layout_below="@id/update_imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/update_imageTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/update_userName"
+            android:hint="Enter the new Username"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColorHint="@color/surfaces"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:fontFamily="cursive"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_updateBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Update User"
+        android:textAllCaps="false"
+        android:fontFamily="cursive"
+        android:backgroundTint="@color/surfaces"
+        android:textSize="26sp"
+        />
+
+</RelativeLayout>

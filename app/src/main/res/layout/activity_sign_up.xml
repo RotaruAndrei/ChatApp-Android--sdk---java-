@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/singUp_imageView"
+        android:src="@mipmap/ic_download_media_selection_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singUp_imageTitle"
+        android:text="Click on the image above to select user profile picture"
+        android:textSize="20sp"
+        android:layout_below="@id/singUp_imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/surfaces"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singUp_userLayout"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/singUp_imageTitle"
+        android:textColorHint="@color/surfaces"
+        app:boxStrokeColor="@color/surfaces">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singUp_edit_user"
+            android:hint="Enter your user name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:textSize="26sp"
+            android:backgroundTint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singUp_passwordLayout"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/singUp_userLayout"
+        android:textColorHint="@color/surfaces"
+        app:boxStrokeColor="@color/surfaces">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singUp_edit_password"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:textSize="26sp"
+            android:backgroundTint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singUp_emailLayout"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/singUp_passwordLayout"
+        android:textColorHint="@color/surfaces"
+        app:boxStrokeColor="@color/surfaces">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singUp_edit_email"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:textSize="26sp"
+            android:backgroundTint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singUp_signUp_btn"
+        android:text="Sing Up"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:fontFamily="cursive"
+        android:backgroundTint="@color/surfaces"
+        android:textSize="26sp"
+        />
+
+
+</RelativeLayout>
